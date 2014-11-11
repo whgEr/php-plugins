@@ -19,6 +19,6 @@
 	$pdf = $dir . '11.pdf';//源文件
 	$swf = $dir . '11.swf';//目标文件
 	$command = "\"D:/Program Files/SWFTools/pdf2swf.exe\"  -t " . $pdf . " -o  " . $swf ; //-s flashversion=9(未知作用)
-  $shell = new COM("WSCript.Shell") ;
+	$shell = new COM("WSCript.Shell") ;
 	$oExec = $shell->Run("cmd /C " . $command, 0, true);
  ?>
